@@ -1,0 +1,144 @@
+\documentclass[10pt]{letter}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\setlength{\textwidth}{20.0cm}
+\setlength{\textheight}{25.0cm}
+\setlength{\oddsidemargin}{-2.0cm}
+\setlength{\evensidemargin}{-2.0cm}
+\setlength{\topmargin}{-3.0cm}
+
+\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
+
+\renewcommand{\baselinestretch}{1.2}
+\newcommand{\D}{{\mathrm d}}
+\newcommand{\e}{{\mathrm e}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\textsc{Formation Fluide-Cinétique}
+\end{center}
+
+\bigskip
+
+{\bf TP1 : petites ondes}
+
+\bigskip
+
+$\bullet$ On perturbe la vitesse initiale. Pourrait-on perturber une autre grandeur ? \\
+$\rightarrow$ oui si c'est une grandeur qui intervient dans la polarisation de l'onde ; la densité pour un mode compressionel...
+
+$\bullet$ L'amplitude de la perturbation joue-t-elle un rôle ? \\
+$\rightarrow$ non si elle est suffisament faible, ie si l'on peut faire l'approximation d'un mode linéaire; mais si on n'est plus linéaire, l'amplitude devient importante, car par exemple elle va intervenir dans le bilan d'énergie.
+
+$\bullet$ Pourquoi cele entraine une perturbation de densité ? \\
+$\rightarrow$ parceque la polarisation d'une onde sonore porte sur la densité, la vitesse (longitudinale), la pression et la température (si l'évolution est adiabatique).
+
+$\bullet$ Pourquoi obtient-on 2 composantes de $\delta v$ (1 vers la droite, l'autre vers la gauche) ? \\
+$\rightarrow$ on injecte de l'energie qui ne correspond pas a 1 mode propre. On donne donc à manger à tout les modes... ces deux modes gardent une certaine cohérence au cours du temps car ils ne sont pas dispersifs.
+
+$\bullet$ Qu'est-ce qu'une onde mécanique ? \\
+$\rightarrow$ la force de rappelle est mécanique. L'onde a besoin de cette force et de l'inertie du milieu. Ces 2 grandeurs apparaissent forcément dans la vitesse de phase (température et masse pour une onde sonore).
+
+$\bullet$ En hybride, pourquoi doit-on considérer le mode acoustique-ionique et pas le mode sonore ? \\
+$\rightarrow$ l'inertie est celle des ions (les électrons ont une masse nulle) mais la force de rappel est associée aux ions et aux électrons. La force de rappel est essentiellement due au gradient de pression des électrons et donc a leur température (celle due aux ions est souvent beaucoup plus petite). Pour une pression polytropique, c'est un gradient, donc le champ électrique associé est electrostatique (ie dont le rotationnel est nul).
+
+$\bullet$ Pourquoi ce mode est-il amorti ? \\
+$\rightarrow$ Pour etre dissipatif, il faut des collisions ou des effets de temperatures. L'amortissement Landau est un exemple du au effets de température. Dans les effets de température, on peut aussi citer les anisotropies (eg modes mirroir, firehose...)
+
+$\bullet$ Que se passe-t'il a $\beta_e \ll 1$ ? \\
+$\rightarrow$ Le champ électrostatique est beaucoup plus faible ($T_e$ petit, donc $\nabla P_e$ petit, donc champ électrique associé petit) : la force de rappel est aussi petite. La vitesse de phase du mode se reduit donc avec $\beta_e$ car cette vitesse augmente avec la force de rappel, et diminue avec l'inertie du milieu.
+
+$\bullet$ Pourquoi le champ électrique est dominé par les effets de température ? \\
+$\rightarrow$ c'est le terme dominant dan le cas non-magnetisé car alors les autres termes de la loi d'Ohm sont d'ordre 2 : 
+
+$\bullet$ Pourquoi y a-t'il une seule onde sonore en fluide compréssible et 3 modes en MHD ? \\
+$\rightarrow$ en fluide neutre, on a 3 inconnues ($n$, $V$, $p$) et 3 equations scalaires associées.  Il y a donc 3 modes (ie 3 modes propres), $+c_s$, $-c_s$ et le mode entropique ($\omega =0$). En MHD, il y a 7 inconnues ($n$, $p$, $u_x$, $u_y$, $u_z$, $b_y$, $b_z$) pour 7 equations avec les 3 modes alfvén, magnétosonore lent et magnétosonore rapide dans les 2 directions, plus le mode entropique (non propagatif).
+
+\newpage
+
+{\bf TP2 : Fortes perturbations}
+
+\bigskip
+
+Les 2 pics de vitesse (de signe opposés) tendent à ramener la matière au centre de la boîte. La densité doit donc y augmenter. Mais le gradient de pression induit un champ électrique qui repousse les particules et s'oppose à ce raidissement. En diminuant $\beta$, on enlève au plasma la possibilité de se défendre, d'ou 1 pic de densité plus aigue.
+
+La viscosité permet de faire fondre les gradients de vitesse... elle en limite donc le développement.
+
+\underline{\sc mhd}
+
+$\bullet$ Comment calculer le temps de retournement $t_r$ ? \\
+$\rightarrow$ il est donné par l'analyse dimensionnelle entre le terme de derivée temporelle et le terme d'advection, soit $t_r = L/U$
+
+$\bullet$ Comment calculer le temps diffusif $t_d$ ? \\
+$\rightarrow$ idem avec le terme de dérivée temporelle et le terme de viscosité, soit $t_d = nmL^2/\eta$
+
+
+\underline{\sc hybrid}
+
+$\bullet$ Quelle est l'origine de la surpression entre les phases 1 et 2 du « Z » ? \\
+$\rightarrow$ le ruban en s'étirant, va donner des regions (initialement au centre) ou les 2 populations qui apparaissent avec une vitesse dirigée et une température nulle donne d'un point de vu fluide une vitesse fluide nulle et une température importante...
+
+$\bullet$ Quelle est l'origine de l'apparition d'un terme de flux de chaleur ? \\
+$\rightarrow$ si on n'est pas au centre, les 3 branches du « Z » ne sont pas symétriques. Il apparait alors un moment d'ordre 3 associé a la dissymétrie de la fonction de distribution.
+
+$\bullet$ Pourquoi le flux de chaleur peut s'ecrire $q=-pU$ ? \\
+$\rightarrow$ en dessinant les 3 pics du « Z » (car temperature nulle), on va faire apparaître une vitesse dirigée du côté où il y a 2 pics. En conséquence, de ce côté là, les 2 pics seront plus proche de cette vitesse moyenne $U$ que de l'autre côté... donc la « température » associée plus faible. La fonction de distribution sera donc plus enflée du côté opposé à $U$. En conséquence, $q$ et $U$ sont de signe opposé.
+
+$\bullet$ Si on ajoute la température des électrons, pourquoi le « Z » se modifie comme il le fait ? \\
+$\rightarrow$ lorsque le « Z » devient raide au milieu, le champ électrique dû à $\nabla P_e$ pousse les ions avec plus de fermeté... on ne peut plus être balistique. Les ions sont accéléré, et donc augmentent leur vitesse. Ensuite, ils continuent leur vie de manière plus balistique.
+
+$\bullet$ Si on augmente $T_e$ que se passe-t'il ?
+$\rightarrow$ je ne sais pas... a simuler ! mais le $E = - \nabla P_e$ va être plus grand, et donc repousser plus fort les ions... donc la bosse en densité des ions va être moins grosse, et donc par la suite la corne va peut-être moins pousser.
+
+\newpage
+
+{\bf TP3 : Instabilité faisceau d'ion}
+
+\bigskip
+
+$\bullet$ Que faut-il pour destabiliser le mode acoustique-ionique ? \\
+$\rightarrow$ la masse des ions (elle est là) et la temperature, au moins des electrons (car c'est elle qui fait la force de rappel). De plus, il faut que $\partial f/ \partial v$ soit grand pour $v$ proche de $\omega/k = c_s$... ie à la vitesse du faisceau moins sa vitesse thermique
+
+$\bullet$ Quel est la polarisation du mode acoustique-ionique ? \\
+$\rightarrow$ le mode est électrostatique, donc 1d. Il est polarisé linéairement, selon $k$, avec des fluctuations de densité et de vitesse (longitudinale)
+
+$\bullet$ De quoi depend la taille des boucles de piégage ? \\
+$\rightarrow$ de la force de rappel, ie de la température des électrons
+
+$\bullet$ Quelle est la nature du mode whistler ? \\
+$\rightarrow$ c'est la partie haute fréquence de la branche du mode rapide. Il devient donc circulaire. C'est de plus un mode purement électronique, donc droit. il s'agit d'un mode qui n'est plus mécanique (la masse des électrons n'intervient pas dans la vitesse de phase) avec $\omega = k^2 \frac{v_A^2}{2 \Omega^2} (\sqrt{\Omega^2+ 4 k^2 v_A^2} \pm \Omega)$, le signe $\pm$ faisant référence aux mode droit/gauche, respéctivement. Le raisonnement avec inertie et force de rappel devient donc caduque. Il est dispersif et a une vitesse de groupe supérieur à la vitesse d'alfven... qui grimpe avec $\omega$ (ou $k$). Il faut donc un faisceau plus rapide que pour le mode acoustique-ionique. Il est à $k$ plus grand, donc une échelle spatiale plus petite.
+
+$\bullet$ Que dire du mode  Alfvén Ion Cyclotron ? \\
+$\rightarrow$ c'est un mode polarisé linéairement, avec $\delta b$ et $\delta v$ en phase (et pas de $\delta n$ car non-compressionel). Le $\delta v$ doit donc être transvers au champ magnétique.
+
+\newpage
+
+{\bf TP4 : Le pavé dans la marre}
+
+Il y a 2 à la vitesse : $u_s$ (solenoide) à divergence nulle et $u_c$ (compressible) à rotationel nul... en gros $u_s$ fait tourner et $u_c$ transporte.
+
+$\bullet$ Comment se comparent $u_s$ et $u_c$ ? \\
+$\rightarrow$ $u_s$ est faible, mais ne varie pas dans le temps. Rien n'empêche les tourbillons de se former et de se développer. Par contre, $u_c$ s'evanoui vite et le pavé est très vite freiné. La forte comrpessibilite du milieu réduit drastiquement $u_c$, et les effets non-linéaires $U . \nabla U$ rendent ce champ de vitesse vite turbulent.
+
+$\bullet$ De quoi dépendent $u_s$ et $u_c$ ? \\
+$\rightarrow$ $u_s$ va surtout dépendre de la taille du pavé (quantité de fluide déplacé), mais aussi de sa vitesse. $u_c$ dépend initialement de la vitesse du pavé, mais cascade très vite vers les plus petites échelles.
+
+$\bullet$ Est-ce $u_s$ ou $u_c$ qui transporte la matière ? \\
+$\rightarrow$ $u_c$ bien sûre; $u_s$ ne fait que la mélanger "sur place".
+
+$\bullet$ Pourquoi le champ magnétique a un effet stabilisant en hybride ? \\
+$\rightarrow$ parceque la tension magnétique a tendance à tenir les lignes de champ rectiligne
+
+\bigskip
+
+\end{document}
